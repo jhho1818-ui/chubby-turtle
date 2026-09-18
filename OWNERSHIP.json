@@ -21,19 +21,122 @@
     "CBY-PROOF",
     "cby-nitznutz-2026"
   ],
-  "generatedAt": "2026-09-18T16:03:10.345Z",
-  "git": null,
+  "generatedAt": "2026-09-18T16:56:54.967Z",
+  "git": {
+    "commit": "1177dcfa218ce9c9f783fb298e0bbfcae5a387e1",
+    "committedAt": "2026-09-18T19:43:19+03:00",
+    "remote": "https://github.com/jhho1818-ui/chubby-turtle.git"
+  },
   "totals": {
-    "files": 48,
-    "bytes": 2775043,
-    "copyrightMarks": 2253
+    "files": 95,
+    "bytes": 8552608,
+    "copyrightMarks": 2374
   },
   "files": [
+    {
+      "file": "Claude outputs/catalog-pick.png",
+      "bytes": 117130,
+      "sha256": "238e456b815d0d40ac17716ff66a94be9a47ae7a11429e7bccb6f30b7e710293",
+      "modified": "2026-09-18T16:32:03.495Z",
+      "copyrightMarks": 0,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "Claude outputs/chubby-before-after.png",
+      "bytes": 291952,
+      "sha256": "64d507aea41b578ac50b2eb803325fd90eb29fbdf7ed3b2565345f26c46e41b9",
+      "modified": "2026-09-18T10:15:45.452Z",
+      "copyrightMarks": 0,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "Claude outputs/chubby-site.zip",
+      "bytes": 761837,
+      "sha256": "44cbbca3243149ff773a3485590ba949639236dec52fe08d5ec0ecb4a1162351",
+      "modified": "2026-09-18T16:06:29.293Z",
+      "copyrightMarks": 0,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "Claude outputs/face.png",
+      "bytes": 137807,
+      "sha256": "6f98fa93780773a6120d6451ad529245254de27cce9d3c8b66691b44ff397d8c",
+      "modified": "2026-09-16T14:00:29.937Z",
+      "copyrightMarks": 0,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "Claude outputs/g-eggs.png",
+      "bytes": 72815,
+      "sha256": "1d82b98074a823dd728f55857a4e5f61fa8f8989f8fe1416daa0ddc352d7a801",
+      "modified": "2026-09-16T18:21:09.945Z",
+      "copyrightMarks": 0,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "Claude outputs/g-fox.png",
+      "bytes": 70112,
+      "sha256": "c4ee2712c4087fa93e8a3262de482b8c9ab722dee6a3f71c93cda7e6a8500a19",
+      "modified": "2026-09-16T18:21:10.465Z",
+      "copyrightMarks": 0,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "Claude outputs/g-hatch.png",
+      "bytes": 145552,
+      "sha256": "7cb83d7adfbb09e2b1d1077f717bd5a51ff32caf977612dd2dc12897a349d2ef",
+      "modified": "2026-09-16T18:21:11.108Z",
+      "copyrightMarks": 0,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "Claude outputs/g-quiz2.png",
+      "bytes": 77707,
+      "sha256": "3c918bfc282f08d6bc0ddf9eeef11a7f8de246c3a0275306a893a0ef580f6d21",
+      "modified": "2026-09-16T18:21:11.571Z",
+      "copyrightMarks": 0,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "Claude outputs/icon-512.png",
+      "bytes": 77833,
+      "sha256": "84a51c6ae1ac267daf5477718ff4c70b18b31ccf116802dfb4215ffe6c991ee4",
+      "modified": "2026-09-16T14:00:30.656Z",
+      "copyrightMarks": 0,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "Claude outputs/make-public.png",
+      "bytes": 162863,
+      "sha256": "a7d7d92a515655b0167b5c36f3c118c2ae3e0ca646ab00726bafb4d33c04a844",
+      "modified": "2026-09-18T12:30:33.165Z",
+      "copyrightMarks": 0,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "Claude outputs/qr-chubby.png",
+      "bytes": 691,
+      "sha256": "51ddc5fab3010fb4626149eb2cca68d06d654c14d635c7d8fbb116341ff62a4e",
+      "modified": "2026-09-18T12:02:36.332Z",
+      "copyrightMarks": 0,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
     {
       "file": "LICENSE",
       "bytes": 3851,
       "sha256": "f1245f5d1d1f0fd347e4c33c0fcb84168c94840762415af54b46fdd3b08ca88b",
-      "modified": "2026-09-18T15:58:50.413Z",
+      "modified": "2026-09-18T16:05:03.281Z",
       "copyrightMarks": 9,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -42,8 +145,17 @@
       "file": "OWNERSHIP.md",
       "bytes": 4793,
       "sha256": "23ac8bbf16199f11a4ed1df165deac4450e8adcd8175964ee4df84de1d4fa8da",
-      "modified": "2026-09-18T16:01:18.722Z",
+      "modified": "2026-09-18T16:05:02.777Z",
       "copyrightMarks": 10,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "QR-לצאבי.png",
+      "bytes": 6461,
+      "sha256": "a02a31e20ff932a9cb76387820de6edb3672df5438f80cf34ce354e63f076890",
+      "modified": "2026-09-18T12:01:58.916Z",
+      "copyrightMarks": 0,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
     },
@@ -51,7 +163,7 @@
       "file": "README.md",
       "bytes": 16175,
       "sha256": "ebaf7c3b9fea267deab78dfe9920e357ce80d617c7012a192cc01f638e4eb9d7",
-      "modified": "2026-09-17T13:08:13.932Z",
+      "modified": "2026-09-17T14:20:15.390Z",
       "copyrightMarks": 3,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -60,7 +172,7 @@
       "file": "_redirects",
       "bytes": 95,
       "sha256": "52f5f59fc6dac3ccbb647f657ef6ae0f5746e91a304c02d169dba6f9eecd598c",
-      "modified": "2026-09-18T15:57:37.329Z",
+      "modified": "2026-09-18T16:05:04.256Z",
       "copyrightMarks": 2,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -69,7 +181,7 @@
       "file": "academy-deep.js",
       "bytes": 23084,
       "sha256": "d405faddfea19d2c87d63343e174088a9d99fd8abe71ba8ab967201e7da4dfc0",
-      "modified": "2026-09-18T15:54:36.566Z",
+      "modified": "2026-09-18T16:04:34.825Z",
       "copyrightMarks": 11,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -78,7 +190,7 @@
       "file": "academy.js",
       "bytes": 35548,
       "sha256": "5958463a4911337a3988271f58fb00104a60dd4227bf0f95364fb872953d2d3d",
-      "modified": "2026-09-18T15:54:36.598Z",
+      "modified": "2026-09-18T16:04:34.373Z",
       "copyrightMarks": 69,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -87,16 +199,16 @@
       "file": "app.js",
       "bytes": 43269,
       "sha256": "b74ae4ef4bb805790b4e627a70572f0554add3ab58cc0e1b99693d217359bd4e",
-      "modified": "2026-09-18T15:54:36.630Z",
+      "modified": "2026-09-18T16:04:28.506Z",
       "copyrightMarks": 147,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
     },
     {
       "file": "apple-touch-icon.png",
-      "bytes": 23535,
-      "sha256": "9e09095eb0084b0d91f486dacc343b2fa6048b9c15f31870a995797482210dbd",
-      "modified": "2026-09-16T20:10:41.614Z",
+      "bytes": 29305,
+      "sha256": "07f4821ae600b2600903b43f92417a97c0e61629cfd2aeaa8d0ddd335f54d9b1",
+      "modified": "2026-09-16T20:18:38.140Z",
       "copyrightMarks": 0,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -105,8 +217,17 @@
       "file": "articles.js",
       "bytes": 35102,
       "sha256": "c00bbda2982dd66efcfdf84e4d388674162fcd80deab034a757ceff4d400f777",
-      "modified": "2026-09-18T15:54:36.662Z",
+      "modified": "2026-09-18T16:04:33.785Z",
       "copyrightMarks": 53,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "assets/chubby-concepts.png",
+      "bytes": 140809,
+      "sha256": "c36c38d0931ecea605112b536fff8f94398d7ce20e548be543f4478fb2b09615",
+      "modified": "2026-09-14T20:52:05.374Z",
+      "copyrightMarks": 0,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
     },
@@ -114,7 +235,7 @@
       "file": "brain.js",
       "bytes": 277823,
       "sha256": "256c0ecce92a32e27bc342c18fc1d711078246338b6c5001bba02b3b9bfceb16",
-      "modified": "2026-09-17T13:00:10.666Z",
+      "modified": "2026-09-18T16:04:40.540Z",
       "copyrightMarks": 6,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -123,7 +244,7 @@
       "file": "brain.json",
       "bytes": 277651,
       "sha256": "2c4cc0afa1d2671fecdd86686862a2eaa32ba0f10fff43b32d579aca41198313",
-      "modified": "2026-09-17T13:00:10.663Z",
+      "modified": "2026-09-17T13:10:05.664Z",
       "copyrightMarks": 4,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -132,7 +253,7 @@
       "file": "care.js",
       "bytes": 4710,
       "sha256": "017d9ca200d5b5a768395fee7531c7f1ec586f83d4a02d873212f5260de58ea7",
-      "modified": "2026-09-18T15:54:36.694Z",
+      "modified": "2026-09-18T16:04:35.301Z",
       "copyrightMarks": 24,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -141,8 +262,17 @@
       "file": "cby-owner.js",
       "bytes": 12400,
       "sha256": "4144cac9a12b969826cd29c3738ef1998bd207b1532f63d227cfff12ff96768d",
-      "modified": "2026-09-18T15:54:36.722Z",
+      "modified": "2026-09-18T16:04:27.473Z",
       "copyrightMarks": 44,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "chubby-site.zip",
+      "bytes": 761837,
+      "sha256": "44cbbca3243149ff773a3485590ba949639236dec52fe08d5ec0ecb4a1162351",
+      "modified": "2026-09-18T16:05:10.043Z",
+      "copyrightMarks": 0,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
     },
@@ -150,16 +280,16 @@
       "file": "chubby3d.js",
       "bytes": 65518,
       "sha256": "3931ff2c007e87ef69f286ae84568dc6dc07b6761e166610366f890fd26dcb9b",
-      "modified": "2026-09-18T15:54:36.754Z",
+      "modified": "2026-09-18T16:04:31.330Z",
       "copyrightMarks": 190,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
     },
     {
       "file": "favicon-32.png",
-      "bytes": 2127,
-      "sha256": "8786e1b966e05477a24b981e6878ca01e1950354cfc69abc897fde4860de04f9",
-      "modified": "2026-09-16T20:10:41.618Z",
+      "bytes": 7897,
+      "sha256": "250cdbf3eba27884a3d4d572054bc119979edf03bfc3fc53ec2b47e2d6f2b459",
+      "modified": "2026-09-16T20:18:38.743Z",
       "copyrightMarks": 0,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -168,7 +298,7 @@
       "file": "games.js",
       "bytes": 72904,
       "sha256": "28e89ba0aa1377cdfa89d695efa3da022aa722da532753cd0d7e3f8857f3be22",
-      "modified": "2026-09-18T15:54:36.786Z",
+      "modified": "2026-09-18T16:04:33.134Z",
       "copyrightMarks": 246,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -177,7 +307,7 @@
       "file": "games3d.js",
       "bytes": 188974,
       "sha256": "7c8206424f20e95692e9592fdb6ae391c0621782c895044906483487f7da02bd",
-      "modified": "2026-09-18T15:54:36.818Z",
+      "modified": "2026-09-18T16:04:32.355Z",
       "copyrightMarks": 541,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -186,43 +316,43 @@
       "file": "hibur-oto-kishur.html",
       "bytes": 7438,
       "sha256": "3edcc4d7b65dad56faaf9e1d879ecf7edd959163f6dc8ef023844dae299b60c8",
-      "modified": "2026-09-18T16:00:23.210Z",
+      "modified": "2026-09-18T16:05:05.660Z",
       "copyrightMarks": 8,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
     },
     {
       "file": "icon-192.png",
-      "bytes": 29795,
-      "sha256": "51125466a512e8f57669d641b5df3caeabbbe878415e9234de2177ef2761d7ce",
-      "modified": "2026-09-16T20:10:41.546Z",
+      "bytes": 35565,
+      "sha256": "d717c765d3425151ff4d79121dc0cb1fbee9032f29a2a1a4ad5bab7b8b9507ca",
+      "modified": "2026-09-16T20:18:35.725Z",
       "copyrightMarks": 0,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
     },
     {
       "file": "icon-512.png",
-      "bytes": 112831,
-      "sha256": "d0ba5bb518bdaa4e0240be81123a45d1db5c7779359220d57e6ab37513f86979",
-      "modified": "2026-09-16T20:10:41.530Z",
+      "bytes": 118601,
+      "sha256": "5fb0b22dbad39ccc903545238fff5542247d44c7bb075f2d905b519c109add46",
+      "modified": "2026-09-16T20:18:36.215Z",
       "copyrightMarks": 0,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
     },
     {
       "file": "icon-maskable-192.png",
-      "bytes": 22067,
-      "sha256": "4321cb6bbc58cbaccb1821f1bcad3f3473a6952d872ce456c8adef4b8eb315b4",
-      "modified": "2026-09-16T20:10:41.602Z",
+      "bytes": 27837,
+      "sha256": "4115ef08d3e53bc6ef66846f42885e99b1feb636e5b263197ed74794e79ab2af",
+      "modified": "2026-09-16T20:18:36.750Z",
       "copyrightMarks": 0,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
     },
     {
       "file": "icon-maskable-512.png",
-      "bytes": 82448,
-      "sha256": "320096f345a6f682232a623b47223c6f6c13e15594241eb25a877660dde076e8",
-      "modified": "2026-09-16T20:10:41.590Z",
+      "bytes": 88218,
+      "sha256": "d973c264e884978643d54ecac418dd579fbb4c387ef061b45fa0a616fc582dd1",
+      "modified": "2026-09-16T20:18:37.592Z",
       "copyrightMarks": 0,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -231,17 +361,8 @@
       "file": "index.html",
       "bytes": 21292,
       "sha256": "3f11382171a7c9ae2890b6129b79d25fff92ba466c8e15aefdd1372575897f4a",
-      "modified": "2026-09-18T15:56:21.422Z",
+      "modified": "2026-09-18T16:04:29.001Z",
       "copyrightMarks": 57,
-      "owner": "Daniel Avraham Haddad",
-      "fingerprint": "CBY-T7R4L2E9"
-    },
-    {
-      "file": "install-page.html",
-      "bytes": 16202,
-      "sha256": "7ccebb87e72d211047afa0ed7e82aefe92250dc3ef078977b210a27758f2b150",
-      "modified": "2026-09-18T15:54:36.822Z",
-      "copyrightMarks": 44,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
     },
@@ -249,7 +370,7 @@
       "file": "kb.js",
       "bytes": 19498,
       "sha256": "16aafa241c796cf4f3d90697747449b07004eda41631279d6b13e41f73ea0ef4",
-      "modified": "2026-09-18T15:54:36.850Z",
+      "modified": "2026-09-18T16:04:38.125Z",
       "copyrightMarks": 70,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -258,7 +379,7 @@
       "file": "lexicon.js",
       "bytes": 19760,
       "sha256": "529b5db7035bbf764aaad2a84a9c0a26ff7116e7199f653133d14005aee07455",
-      "modified": "2026-09-18T15:54:36.878Z",
+      "modified": "2026-09-18T16:04:39.589Z",
       "copyrightMarks": 40,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -267,7 +388,7 @@
       "file": "manifest.json",
       "bytes": 2795,
       "sha256": "e56cb59bca7621d4479b8785e451a868173480199ae06486cd91ea8998545c76",
-      "modified": "2026-09-17T17:35:47.102Z",
+      "modified": "2026-09-17T17:43:01.172Z",
       "copyrightMarks": 6,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -276,7 +397,7 @@
       "file": "match.js",
       "bytes": 50280,
       "sha256": "cea4b1ca7096ef99fdb4f5216240b58fb81fad46c14942ee76cf3738f5b5c20f",
-      "modified": "2026-09-18T15:54:36.902Z",
+      "modified": "2026-09-18T16:04:36.918Z",
       "copyrightMarks": 86,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -285,7 +406,7 @@
       "file": "mind.js",
       "bytes": 20470,
       "sha256": "a2ba99f36278a241dbff3a8f5ef47ac7e7a684e2915db0c0ba3898e43ab73c9a",
-      "modified": "2026-09-18T15:54:36.930Z",
+      "modified": "2026-09-18T16:04:38.546Z",
       "copyrightMarks": 54,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -294,16 +415,16 @@
       "file": "netlify.toml",
       "bytes": 2688,
       "sha256": "c44ac8473f3eacc60d2250c623496fdbc4c59ac736c4226b9ef3da40abeb1dac",
-      "modified": "2026-09-18T15:57:37.328Z",
+      "modified": "2026-09-18T16:05:03.808Z",
       "copyrightMarks": 6,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
     },
     {
       "file": "publish.bat",
-      "bytes": 3197,
-      "sha256": "847c1c2d9e7e400051be19bea5cf076f6bf94ecea1485a6344b6e2b4f45e772f",
-      "modified": "2026-09-18T15:59:12.330Z",
+      "bytes": 3309,
+      "sha256": "f229f9fa08f54a9e589a28ef5315c6d3155ade7846c679c6bf9f17137473c392",
+      "modified": "2026-09-18T16:16:35.828Z",
       "copyrightMarks": 2,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -312,7 +433,16 @@
       "file": "robots.txt",
       "bytes": 200,
       "sha256": "870301ccc0ba6619cf3ebeba0af70da758e378522f8a26fc4c3ef8489742dafe",
-      "modified": "2026-09-18T15:58:50.411Z",
+      "modified": "2026-09-18T16:05:04.750Z",
+      "copyrightMarks": 4,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "setup-github.bat",
+      "bytes": 4268,
+      "sha256": "400ec64ed6de3b908d9b0f69eacf40966275d1f427e12644b87587b85419c90f",
+      "modified": "2026-09-18T16:16:35.422Z",
       "copyrightMarks": 4,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -321,7 +451,7 @@
       "file": "smart.js",
       "bytes": 13243,
       "sha256": "89f4ba4161444408d9c678fb376bb6868fa60b35d7ec97a26b1526d1bc13a928",
-      "modified": "2026-09-18T15:54:36.954Z",
+      "modified": "2026-09-18T16:04:39.149Z",
       "copyrightMarks": 42,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -330,7 +460,7 @@
       "file": "sound.js",
       "bytes": 28934,
       "sha256": "b4d07396276962e52c45845731aaafc2757c619d77cc54584c63b87a194c3931",
-      "modified": "2026-09-18T15:54:36.978Z",
+      "modified": "2026-09-18T16:04:35.787Z",
       "copyrightMarks": 75,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -339,7 +469,7 @@
       "file": "style.css",
       "bytes": 46793,
       "sha256": "b73823243c57d2df2a26622c44d188083393594559b690090f9b2d2d8eba030f",
-      "modified": "2026-09-18T16:01:57.563Z",
+      "modified": "2026-09-18T16:04:29.894Z",
       "copyrightMarks": 176,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -347,8 +477,8 @@
     {
       "file": "sw.js",
       "bytes": 3061,
-      "sha256": "16be0ed1ec8e4fcbbc3c3e317d516f602a7d1d3d3abfa1dd0de844f788663488",
-      "modified": "2026-09-18T16:03:10.266Z",
+      "sha256": "ec66a32f783fb7654286e1a17017df0c65e229d45fc9c778f6238443d3b3af15",
+      "modified": "2026-09-18T16:56:54.032Z",
       "copyrightMarks": 17,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -357,7 +487,7 @@
       "file": "talk.js",
       "bytes": 45209,
       "sha256": "2a2c7ac485bc36dc395168249728b21c63354b3ed1680b38c7d3acb2e6966257",
-      "modified": "2026-09-18T15:54:37.030Z",
+      "modified": "2026-09-18T16:04:37.694Z",
       "copyrightMarks": 80,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -366,17 +496,8 @@
       "file": "three.min.js",
       "bytes": 603445,
       "sha256": "9274bbcec8d96168626c732b5d31c775aa8cfb7eaa0599bec0c175908a2c1ce2",
-      "modified": "2026-09-16T13:50:20.906Z",
+      "modified": "2026-07-19T00:07:04.070Z",
       "copyrightMarks": 0,
-      "owner": "Daniel Avraham Haddad",
-      "fingerprint": "CBY-T7R4L2E9"
-    },
-    {
-      "file": "tools/__pycache__/social.cpython-311.pyc",
-      "bytes": 27208,
-      "sha256": "569f2a66a3eb2bbfd89d2d6be5e7eaae1d846719e5bb63461888fe8dc4e0f287",
-      "modified": "2026-09-17T13:00:10.647Z",
-      "copyrightMarks": 3,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
     },
@@ -384,7 +505,7 @@
       "file": "tools/brain.json",
       "bytes": 277651,
       "sha256": "2c4cc0afa1d2671fecdd86686862a2eaa32ba0f10fff43b32d579aca41198313",
-      "modified": "2026-09-17T13:00:10.664Z",
+      "modified": "2026-09-17T13:10:09.224Z",
       "copyrightMarks": 4,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -393,7 +514,7 @@
       "file": "tools/build-brain.py",
       "bytes": 90061,
       "sha256": "992fea77d1401e27de46dd296dee22da7a80efcadbbbd6be77b4fb1419480527",
-      "modified": "2026-09-17T12:59:59.462Z",
+      "modified": "2026-09-17T13:10:07.263Z",
       "copyrightMarks": 9,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -402,7 +523,7 @@
       "file": "tools/build-dist.js",
       "bytes": 2947,
       "sha256": "ec46d66c7568654acfed1c072a6bb53a285d612d44807fa2a81427ae98f19f8a",
-      "modified": "2026-09-18T15:58:17.575Z",
+      "modified": "2026-09-18T16:05:07.582Z",
       "copyrightMarks": 6,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -411,7 +532,7 @@
       "file": "tools/cache-version.js",
       "bytes": 1854,
       "sha256": "00322a5015d2bb754f7a15b12dd890c44110e562c8f9ba6f29ef5bedb179451f",
-      "modified": "2026-09-18T15:58:17.577Z",
+      "modified": "2026-09-18T16:05:08.085Z",
       "copyrightMarks": 3,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -420,7 +541,7 @@
       "file": "tools/fingerprint.js",
       "bytes": 5960,
       "sha256": "78e4c1e105b70f5614bc32fdbbd66e714afe66354d1fcfab4f3d37c85f64f402",
-      "modified": "2026-09-18T15:57:07.482Z",
+      "modified": "2026-09-18T16:05:07.095Z",
       "copyrightMarks": 9,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -429,7 +550,7 @@
       "file": "tools/glossary.txt",
       "bytes": 62460,
       "sha256": "07f793b15dfb068b902169a312561bedeb646b538c096ea91dd37e10f6a55f71",
-      "modified": "2026-09-17T12:59:59.463Z",
+      "modified": "2026-09-17T13:10:08.326Z",
       "copyrightMarks": 2,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -438,7 +559,7 @@
       "file": "tools/mark.js",
       "bytes": 10742,
       "sha256": "14341f4df60a377e869e76b94d6dc2334ebceb60aa3f73bff8df7fd596271eee",
-      "modified": "2026-09-18T15:54:27.182Z",
+      "modified": "2026-09-18T16:05:06.212Z",
       "copyrightMarks": 7,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -447,7 +568,7 @@
       "file": "tools/social.py",
       "bytes": 30160,
       "sha256": "1aea64350bcf4e3c321c3b9980f1195a74aa5c044bc12206093a357ba5572eb0",
-      "modified": "2026-09-17T12:59:59.463Z",
+      "modified": "2026-09-17T13:10:07.759Z",
       "copyrightMarks": 3,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
@@ -456,8 +577,314 @@
       "file": "voice.js",
       "bytes": 26795,
       "sha256": "2399d25799180e7fc7ab2aed15690b01f3bc357a39797a351416f740070301f8",
-      "modified": "2026-09-18T15:54:37.058Z",
+      "modified": "2026-09-18T16:04:36.426Z",
       "copyrightMarks": 81,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "דף התקנה לפלאפון.html",
+      "bytes": 16202,
+      "sha256": "7ccebb87e72d211047afa0ed7e82aefe92250dc3ef078977b210a27758f2b150",
+      "modified": "2026-09-18T16:04:40.991Z",
+      "copyrightMarks": 44,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/_headers",
+      "bytes": 1073,
+      "sha256": "6bb7d5ae107f56cf70d55ef1b92e72c21862c3dd61aac2e31ec17100a1ebe9ed",
+      "modified": "2026-09-17T17:42:58.801Z",
+      "copyrightMarks": 2,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/academy-deep.js",
+      "bytes": 22916,
+      "sha256": "a377fb30826d6deafe21d5d645b8d07e2cc5e3cab73eff91beb2e74a46dc565b",
+      "modified": "2026-09-17T17:42:54.647Z",
+      "copyrightMarks": 5,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/academy.js",
+      "bytes": 33291,
+      "sha256": "9f1ffcd1bad6851614417f533a9078bc7d28066337a665099e1a2a8594681ea6",
+      "modified": "2026-09-17T17:42:54.006Z",
+      "copyrightMarks": 3,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/app.js",
+      "bytes": 38828,
+      "sha256": "84afceb185ea4702c7e9c14f210ac30a936dcf6ffd726fe01b8192ec93ed58ab",
+      "modified": "2026-09-18T12:07:06.475Z",
+      "copyrightMarks": 3,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/apple-touch-icon.png",
+      "bytes": 29305,
+      "sha256": "c56219df6fd5ddba0a49bf479e663b1bb9d664b335cf231824524c57f426f48d",
+      "modified": "2026-09-17T17:42:57.808Z",
+      "copyrightMarks": 0,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/articles.js",
+      "bytes": 33405,
+      "sha256": "5f31d21491f80ecbcea4e43b35c38b23b6b91249eb16cdaba9450d4f83c72cb0",
+      "modified": "2026-09-18T11:44:11.508Z",
+      "copyrightMarks": 7,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/brain.js",
+      "bytes": 277823,
+      "sha256": "256c0ecce92a32e27bc342c18fc1d711078246338b6c5001bba02b3b9bfceb16",
+      "modified": "2026-09-17T17:42:16.341Z",
+      "copyrightMarks": 6,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/brain.json",
+      "bytes": 277651,
+      "sha256": "2c4cc0afa1d2671fecdd86686862a2eaa32ba0f10fff43b32d579aca41198313",
+      "modified": "2026-09-17T17:42:17.129Z",
+      "copyrightMarks": 4,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/care.js",
+      "bytes": 3685,
+      "sha256": "0c31abf32a1669e19104af8b7f7b9930d6c094170611dd62b68d36e719528339",
+      "modified": "2026-09-17T17:42:53.276Z",
+      "copyrightMarks": 2,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/chubby3d.js",
+      "bytes": 59901,
+      "sha256": "62ea588f5622c1d3b817d13781c7c873a4ae697ddd9de4c3b6e98c367fe0267e",
+      "modified": "2026-09-18T11:44:16.949Z",
+      "copyrightMarks": 4,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/favicon-32.png",
+      "bytes": 7897,
+      "sha256": "36fa95fce58f94a706cf2f5a21f2265c81ded3fed6fbca59d8e426654e1e4a19",
+      "modified": "2026-09-17T17:42:58.431Z",
+      "copyrightMarks": 0,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/games.js",
+      "bytes": 65719,
+      "sha256": "e3540ee7b84fd816c1dd495082114eacf296863dd9da1025f54aee57894d79a2",
+      "modified": "2026-09-17T17:42:15.597Z",
+      "copyrightMarks": 4,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/games3d.js",
+      "bytes": 174022,
+      "sha256": "d923d96a1ec1f5426d9e746c03cf8bac132c9643c367f8acb56eebeafd86d4e0",
+      "modified": "2026-09-18T11:44:12.991Z",
+      "copyrightMarks": 7,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/icon-192.png",
+      "bytes": 35565,
+      "sha256": "0498addefed6fb491f243f11257494c88d99a243495c12ca40057819c300ff2d",
+      "modified": "2026-09-17T17:42:55.206Z",
+      "copyrightMarks": 0,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/icon-512.png",
+      "bytes": 118601,
+      "sha256": "b92c360f9190e3031622f50a64d0864090d3af968ad5ef28738acd63144112cf",
+      "modified": "2026-09-17T17:42:55.910Z",
+      "copyrightMarks": 0,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/icon-maskable-192.png",
+      "bytes": 27837,
+      "sha256": "d26b215bf8cf551b8e88f87254709a5dc28c0d41433ff0356f9215c91ffd2405",
+      "modified": "2026-09-17T17:42:56.413Z",
+      "copyrightMarks": 0,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/icon-maskable-512.png",
+      "bytes": 88218,
+      "sha256": "2abc698b39d4dbd73fcc032a1a09a5d096e42fe03104e8ff2718ebb48f9f1cde",
+      "modified": "2026-09-17T17:42:57.076Z",
+      "copyrightMarks": 0,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/index.html",
+      "bytes": 19251,
+      "sha256": "30a09b6d6d6787e98721ab0b8cf170f3272a8b595d524e8cb177b703607045cc",
+      "modified": "2026-09-18T12:07:06.968Z",
+      "copyrightMarks": 5,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/kb.js",
+      "bytes": 17241,
+      "sha256": "6a2c28b1f2ad58e71754fe24f308116aeee294148ef47d2a1cdb3c93d24acdef",
+      "modified": "2026-09-17T17:42:18.845Z",
+      "copyrightMarks": 4,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/lexicon.js",
+      "bytes": 18343,
+      "sha256": "919f41872e859dac3d34b313ec4fea8e4e8f4fbad7a68711713e5946e0d5f5a4",
+      "modified": "2026-09-17T17:42:20.496Z",
+      "copyrightMarks": 4,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/manifest.json",
+      "bytes": 2795,
+      "sha256": "e56cb59bca7621d4479b8785e451a868173480199ae06486cd91ea8998545c76",
+      "modified": "2026-09-17T17:42:10.425Z",
+      "copyrightMarks": 6,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/match.js",
+      "bytes": 48096,
+      "sha256": "4e92f839f5ddef4864c7dd8514a6d327bce38ffdf2b00b45fb52b81a8d142472",
+      "modified": "2026-09-17T17:42:17.873Z",
+      "copyrightMarks": 8,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/mind.js",
+      "bytes": 19182,
+      "sha256": "274d60b55bed740174425eea19b07050ab18ea286afebba9b2449c2fad9359bc",
+      "modified": "2026-09-17T17:42:19.463Z",
+      "copyrightMarks": 8,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/smart.js",
+      "bytes": 12235,
+      "sha256": "076176370eb4a84532e3fecd3136a7efbf884e877a9f297a4c314ead1175c459",
+      "modified": "2026-09-17T17:42:19.884Z",
+      "copyrightMarks": 6,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/sound.js",
+      "bytes": 27030,
+      "sha256": "5f780757d442f44f4558749bdda175828390c04316329f09311616537bcaf73c",
+      "modified": "2026-09-18T11:44:13.495Z",
+      "copyrightMarks": 7,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/style.css",
+      "bytes": 40018,
+      "sha256": "1a3c127a98c2716fe6ed8fef0bb743b5f10047a94acc3671709aa00a9da7be79",
+      "modified": "2026-09-18T11:44:14.792Z",
+      "copyrightMarks": 6,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/sw.js",
+      "bytes": 2184,
+      "sha256": "d031c8e7c7439f6bec0729fcbda8b5393f6019b09881b81c82920390b7b37a80",
+      "modified": "2026-09-18T12:07:07.445Z",
+      "copyrightMarks": 1,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/talk.js",
+      "bytes": 43193,
+      "sha256": "b356fed2dc2df3b113d21e5089cd2a64b9709cd5c624addfd032dc0fdd9576c0",
+      "modified": "2026-09-17T17:42:18.402Z",
+      "copyrightMarks": 8,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/three.min.js",
+      "bytes": 603445,
+      "sha256": "9274bbcec8d96168626c732b5d31c775aa8cfb7eaa0599bec0c175908a2c1ce2",
+      "modified": "2026-09-17T17:42:13.688Z",
+      "copyrightMarks": 0,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/voice.js",
+      "bytes": 24723,
+      "sha256": "af24ebf227dca1e0ec4c3e30409500226554d8464b08f2502a53c845dab1e66c",
+      "modified": "2026-09-18T11:01:29.465Z",
+      "copyrightMarks": 7,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "להעלאה לאינטרנט/קרא-אותי-ראשון.txt",
+      "bytes": 3549,
+      "sha256": "948bcb52d5a6cbbb27b694787ee1e2c68197a41e0599dd14489e064c5c13ee64",
+      "modified": "2026-09-17T17:42:59.333Z",
+      "copyrightMarks": 3,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "צאבי-להעלאה.zip",
+      "bytes": 762757,
+      "sha256": "05da0403857200830e921ce218227466543f27f38d26455fb51ccbacc84c9f03",
+      "modified": "2026-09-18T16:05:11.908Z",
+      "copyrightMarks": 0,
+      "owner": "Daniel Avraham Haddad",
+      "fingerprint": "CBY-T7R4L2E9"
+    },
+    {
+      "file": "🚀 הפעלת צאבי.bat",
+      "bytes": 588,
+      "sha256": "218e712e3efb60eac4cbd2ea4cd768c4833ee67b4039210e88ad4b70db4916ee",
+      "modified": "2026-09-14T21:00:53.553Z",
+      "copyrightMarks": 0,
       "owner": "Daniel Avraham Haddad",
       "fingerprint": "CBY-T7R4L2E9"
     }

@@ -6,7 +6,7 @@
    Unauthorized copying, distribution or attribution is prohibited.
    ================================================================== */
 /* צאבי — Service Worker | CBY-T7R4L2E9 */
-var CACHE = 'chubby-v19';
+var CACHE = 'chubby-v20';
 var ASSETS = [
   './',
   './index.html',
