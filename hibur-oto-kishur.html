@@ -1,0 +1,130 @@
+<!--
+  © כל הזכויות שמורות | ALL RIGHTS RESERVED
+  צאבי הצב — שומר צבי הים
+  יוצר ובעלים בלעדי: דניאל אברהם חדאד | Daniel Avraham Haddad
+  🔒 [CBY-PROOF] CBY-T7R4L2E9 · DAH-CBY-2026
+-->
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>צאבי — עדכון אוטומטי לאותו קישור</title>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800;900&family=Secular+One&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f5e9d2;--ink:#0d3040;--ink2:#3d5a68;--sea:#12758f;--foam:#7fe3c4;
+        --card:#fff;--line:rgba(13,48,64,.12);--code:#0b2634}
+  @media (prefers-color-scheme:dark){:root{--bg:#071d28;--ink:#eaf6fb;--ink2:#9dbccb;
+        --sea:#6fd8e8;--card:#0f3243;--line:rgba(234,246,251,.14);--code:#04131b}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);direction:rtl;line-height:1.75;
+       font-family:Rubik,"Segoe UI",system-ui,sans-serif;padding:0 16px 60px}
+  .wrap{max-width:720px;margin-inline:auto}
+  h1{font-family:"Secular One",Rubik,sans-serif;font-size:clamp(1.5rem,6vw,2rem);margin:28px 0 6px}
+  .sub{color:var(--ink2);margin:0 0 6px;font-size:clamp(.9rem,3.6vw,1rem)}
+  h2{font-family:"Secular One",Rubik,sans-serif;font-size:clamp(1.15rem,4.6vw,1.4rem);
+     margin:32px 0 8px;display:flex;align-items:center;gap:10px}
+  .n{flex:0 0 auto;width:32px;height:32px;border-radius:50%;background:var(--foam);
+     color:#06283a;display:grid;place-items:center;font-weight:900;font-size:.95rem}
+  p{margin:0 0 12px}
+  .why{background:linear-gradient(135deg,rgba(240,168,48,.16),rgba(127,227,196,.12));
+       border:1px solid var(--line);border-radius:18px;padding:16px 18px;margin:18px 0}
+  .why b{color:var(--sea)}
+  pre{background:var(--code);color:#cfe8f2;border-radius:14px;padding:14px 16px;
+      overflow-x:auto;direction:ltr;text-align:left;font-size:.86rem;line-height:1.7;margin:0 0 14px}
+  code{background:rgba(13,48,64,.1);padding:2px 6px;border-radius:6px;font-size:.92em}
+  @media (prefers-color-scheme:dark){code{background:rgba(255,255,255,.1)}}
+  ol{padding-inline-start:22px;margin:0 0 14px}
+  li{margin-bottom:8px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;
+        padding:16px 18px;margin:0 0 12px}
+  footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);
+         color:var(--ink2);font-size:.76rem;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>עדכון אוטומטי לאותו קישור</h1>
+<p class="sub">הגדרה חד-פעמית · אחר כך כל עדכון הוא לחיצה כפולה אחת</p>
+
+<div class="why">
+  ⚠️ <b>למה זה עדיף על גרירת ZIP.</b><br>
+  גרירה ל-Netlify Drop יוצרת בכל פעם אתר <b>חדש</b> עם כתובת חדשה. אחרי שלושה
+  עדכונים יש שלוש כתובות, אף אחד לא יודע איזו נכונה, ומי שכבר התקין את
+  האפליקציה בטלפון נשאר תקוע על הישנה.<br><br>
+  ⚠️ החיבור ל-GitHub פותר בדיוק את זה: <b>הכתובת לעולם לא משתנה.</b>
+  אתה דוחף, Netlify בונה לבד, וכל מי שהתקין מקבל את העדכון בפתיחה הבאה —
+  בלי להתקין מחדש ובלי לדעת שקרה משהו.
+</div>
+
+<h2><span class="n">1</span> מתקינים Git</h2>
+<p>פעם אחת בלבד, מ-<code>git-scm.com</code>. הכול ברירת מחדל, Next עד הסוף.</p>
+
+<h2><span class="n">2</span> יוצרים מאגר ריק ב-GitHub</h2>
+<ol>
+  <li>נכנסים ל-<code>github.com</code> ➜ <b>New repository</b></li>
+  <li>שם: למשל <code>chubby-turtle</code></li>
+  <li><b>חשוב:</b> לא לסמן שום תיבה (בלי README, בלי .gitignore, בלי רישיון) —
+      אחרת הדחיפה הראשונה תיתקל בהתנגשות</li>
+  <li><b>Private</b> אם אתה רוצה שהקוד לא יהיה גלוי. האתר עצמו יישאר ציבורי בכל מקרה.</li>
+  <li>מעתיקים את הכתובת שמופיעה, בצורה <code>https://github.com/…/chubby-turtle.git</code></li>
+</ol>
+
+<h2><span class="n">3</span> מחברים את התיקייה</h2>
+<p>לוחצים ימני על התיקייה של צאבי ➜ <b>Open in Terminal</b> (או Git Bash), ומדביקים:</p>
+<pre>git init
+git add .
+git commit -m "Chubby first commit"
+git branch -M main
+git remote add origin https://github.com/YOUR-NAME/chubby-turtle.git
+git push -u origin main</pre>
+<p>בפעם הראשונה ייפתח חלון התחברות ל-GitHub. זה קורה פעם אחת.</p>
+
+<div class="why">
+  ⚠️ <b>והנה הרווח השני, שהוא אולי החשוב יותר:</b> מרגע זה יש לכל שינוי בקוד
+  חותמת זמן שנרשמה <b>מחוץ למחשב שלך</b>, על שרת של GitHub. זו הראיה החזקה
+  ביותר לבעלות — חזקה בהרבה מכל סימון בתוך הקוד, כי תאריך שנכתב במחשב שלך
+  אפשר לטעון שהוא שונה, ותאריך אצל צד שלישי — לא.
+</div>
+
+<h2><span class="n">4</span> מחברים את Netlify למאגר</h2>
+<ol>
+  <li>בעמוד האתר ב-Netlify ➜ <b>Project configuration</b></li>
+  <li>➜ <b>Build &amp; deploy</b> ➜ <b>Link repository</b></li>
+  <li>בוחרים GitHub, מאשרים גישה, ובוחרים את המאגר</li>
+  <li>ההגדרות כבר כתובות בקובץ <code>netlify.toml</code> שבתיקייה, ולכן לא צריך
+      למלא כלום. אם בכל זאת נשאלים:
+      <br>Build command: <code>node tools/build-dist.js</code>
+      <br>Publish directory: <code>dist</code></li>
+</ol>
+
+<h2><span class="n">5</span> מכאן והלאה</h2>
+<div class="card">
+  <p style="margin:0"><b>לחיצה כפולה על <code>publish.bat</code>.</b></p>
+  <p style="margin:6px 0 0;color:var(--ink2);font-size:.92rem">
+    הסקריפט מעלה את מספר גרסת המטמון, כותב מחדש את קובץ הבעלות
+    <code>OWNERSHIP.json</code> עם תקציר SHA-256 לכל קובץ, דוחף ל-GitHub,
+    ו-Netlify בונה ומפרסם לאותה כתובת תוך כדקה.
+  </p>
+</div>
+
+<div class="why">
+  ⚠️ <b>שלב אחד שקל לשכוח, ובלעדיו שום עדכון לא מגיע לאיש.</b><br>
+  ה-Service Worker מגיש למשתמש את מה ששמור אצלו במטמון, ומחליף אותו רק
+  כששם המטמון משתנה. אפשר להעלות גרסה חדשה מושלמת, לראות אותה עובדת אצלך
+  (כי אצלך אין מטמון ישן) ולחשוב שהכול תקין — בזמן שכל מי שהתקין ממשיך
+  לראות את הישנה לנצח.<br><br>
+  בדיוק בגלל זה <code>publish.bat</code> מעלה את המספר <b>אוטומטית</b>
+  לפני כל דחיפה. אם אתה דוחף ידנית עם <code>git push</code>, הרץ קודם:
+  <code>node tools/cache-version.js --fix</code>
+</div>
+
+<footer>
+  © 2026 דניאל אברהם חדאד · Daniel Avraham Haddad · כל הזכויות שמורות<br>
+  טביעת אצבע: CBY-T7R4L2E9 · מזהה יוצר: DAH-CBY-2026
+</footer>
+
+</div>
+</body>
+</html>

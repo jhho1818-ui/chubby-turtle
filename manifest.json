@@ -1,0 +1,111 @@
+{
+  "name": "צאבי הצב - שומר צבי הים",
+  "short_name": "צאבי",
+  "description": "צאבי הצב מדבר עם ילדים על צבי ים והצלתם: צ'אט חכם, 40 שלבי משחק בתלת-ממד, 28 שיעורים ומאגר של 465 נושאים",
+  "author": "דניאל אברהם חדאד / Daniel Avraham Haddad",
+  "copyright": "© Daniel Avraham Haddad (דניאל אברהם חדאד) - All rights reserved.",
+  "lang": "he",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "portrait-primary",
+  "background_color": "#0a3d5c",
+  "theme_color": "#1a7a8c",
+  "categories": [
+    "education",
+    "kids",
+    "games"
+  ],
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "שיחה עם צאבי",
+      "short_name": "צ'אט",
+      "description": "שאלו את צאבי על צבי ים",
+      "url": "./index.html?go=chat",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "משחקי הצלה",
+      "short_name": "משחקים",
+      "description": "הצילו ביצים ואבקועים",
+      "url": "./index.html?go=games",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "טיפול בצאבי",
+      "short_name": "טיפול",
+      "description": "האכילו וטפחו את צאבי",
+      "url": "./index.html?go=care",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "בית הספר לים",
+      "short_name": "לימוד",
+      "description": "שיעורים על צבי ים",
+      "url": "./index.html?go=learn",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "id": "./",
+  "fingerprint": "CBY-T7R4L2E9",
+  "rights_holder": "Daniel Avraham Haddad"
+}

@@ -1,0 +1,326 @@
+<!--
+  © כל הזכויות שמורות | ALL RIGHTS RESERVED
+  צאבי הצב - Chubby the Turtle
+  יוצר ובעלים בלעדי: דניאל אברהם חדאד / Daniel Avraham Haddad
+  טביעת אצבע: CBY-T7R4L2E9
+-->
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
+  <title>צאבי הצב — שומר צבי הים</title>
+  <meta name="description" content="צאבי הצב 🐢 — צ'אט חכם שמדבר רק על צבי ים: למה הם חשובים, למה הם נעלמים ואיך מצילים אותם. משחקי הצלה, שיעורים וסיור חופים.">
+  <meta name="author" content="דניאל אברהם חדאד / Daniel Avraham Haddad">
+  <meta name="theme-color" content="#1a7a8c">
+  <meta property="og:title" content="צאבי הצב 🐢 — שומר צבי הים">
+  <meta property="og:description" content="למדו למה צבי הים נעלמים, איך מצילים אותם ומה כל אחד יכול לעשות">
+  <meta property="og:image" content="icon-512.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <!-- ⚠️ iOS מתעלם מ-manifest לצורך אייקון מסך הבית וקורא אך ורק את
+       apple-touch-icon, בגודל 180×180 ובלי שקיפות. בלי השורה הזו
+       «הוסף למסך הבית» באייפון מייצר צילום מסך של הדף במקום אייקון. -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="צאבי">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&family=Secular+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ⚠️⚠️ **מסך פתיחה — וזה לא קישוט.**
+       הדף טוען כ-1MB של סקריפטים (Three.js, מאגר הידע, המשחקים).
+       בטלפון על רשת סלולרית זה שנייה עד שתיים שבהן המסך לבן
+       לגמרי. באפליקציה מותקנת זה נראה כמו קריסה, וזה בדיוק הרגע
+       שבו ילד סוגר ולא חוזר.
+       המסך הזה מצויר ב-CSS טהור, נצבע מיד, ונעלם כשהאפליקציה
+       מוכנה. -->
+  <div id="boot-splash">
+    <div class="bs-icon"><img src="icon-192.png" alt="" width="96" height="96"></div>
+    <div class="bs-name">צאבי הצב</div>
+    <div class="bs-sub">שומר צבי הים</div>
+    <div class="bs-bar"><i></i></div>
+  </div>
+
+  <noscript><div class="noscript">🐢 כדי לשחק עם צאבי צריך להפעיל JavaScript.</div></noscript>
+
+  <header class="topbar">
+    <div class="brand" onclick="CBY.go('chat')">
+      <img src="icon-192.png" alt="" class="brand-icon" width="40" height="40">
+      <div>
+        <div class="brand-name">צאבי הצב</div>
+        <div class="brand-sub">שומר צבי הים</div>
+      </div>
+    </div>
+    <div class="top-actions">
+      <span id="rank-badge" class="rank-badge" title="דרגת ההצלה שלכם">🐣 חבר צבים</span>
+      <span id="star-badge" class="star-badge" title="כוכבי הצלה">⭐ 0</span>
+      <button type="button" class="icon-btn" onclick="CBY.speakFact()" title="עובדה אקראית על צבי ים">💡</button>
+      <button type="button" class="icon-btn" onclick="CBY.settings()" title="הגדרות קול וצליל">⚙️</button>
+    </div>
+  </header>
+
+  <div class="rank-strip" aria-label="התקדמות בדרגות">
+    <div class="rank-track"><i id="rank-bar"></i></div>
+    <span id="rank-hint" class="rank-hint">אספו כוכבי הצלה כדי לעלות דרגה</span>
+  </div>
+
+  <nav class="dock" aria-label="תפריט ראשי">
+    <button type="button" data-screen="chat" class="dock-btn active" onclick="CBY.go('chat')">💬<span>צאבי</span></button>
+    <button type="button" data-screen="games" class="dock-btn" onclick="CBY.go('games')">🎮<span>משחקים</span></button>
+    <button type="button" data-screen="care" class="dock-btn" onclick="CBY.go('care')">💚<span>טיפול</span></button>
+    <button type="button" data-screen="learn" class="dock-btn" onclick="CBY.go('learn')">📚<span>לימוד</span></button>
+    <button type="button" data-screen="patrol" class="dock-btn" onclick="CBY.go('patrol')">🏖️<span>סיור</span></button>
+  </nav>
+
+  <!-- CHAT -->
+  <main id="screen-chat" class="screen active">
+    <div id="install-bar">
+      <span class="txt">📲 <b>התקינו את צאבי בטלפון</b><br>ייפתח כאפליקציה מלאה, ויעבוד גם בלי אינטרנט.</span>
+      <button type="button" onclick="CBY.install()">התקנה</button>
+      <button type="button" class="x" onclick="CBY.dismissInstall()" aria-label="סגור">✖</button>
+    </div>
+    <section class="hero-chat">
+      <div class="chubby-stage" id="chubby-stage">
+        <canvas id="chubby-canvas" class="chubby-canvas" width="720" height="420" aria-label="צאבי בתלת-ממד"></canvas>
+        <div class="chubby-avatar fallback-emoji" id="chubby-avatar" aria-hidden="true">🐢</div>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+      </div>
+      <div class="bubble-row">
+        <!-- ⚠️⚠️ **כפתור "שמעו את צאבי" — הפתרון היחיד שתמיד עובד.**
+             דפדפנים חוסמים הקראה לפני מגע ראשון, ואין דרך לדעת
+             מראש אם היא נחסמה. כל התחכום בקוד יכול להיכשל בשקט;
+             כפתור שהילד לוחץ עליו בעצמו הוא מגע משתמש מפורש,
+             וזה מה שהדפדפן דורש. הוא גם פשוט שימושי: לשמוע שוב. -->
+        <button type="button" id="say-btn" class="say-btn"
+          onclick="CBY.sayAgain()" title="שמעו את צאבי" aria-label="שמעו את צאבי">🔊</button>
+        <p id="chubby-bubble" class="bubble">שלום! אני צאבי, שומר האבקועים — שאלו אותי על צבי ים!</p>
+      </div>
+      <p class="scope-note">🐢 אני מדבר <b>רק</b> על צבי ים: מי הם, למה הם חשובים, למה הם נעלמים ואיך מצילים אותם.</p>
+    </section>
+    <div id="chat-log" class="chat-log" role="log" aria-live="polite"></div>
+    <div class="suggest-row" id="suggest-row"></div>
+    <form id="chat-form" class="composer" autocomplete="off">
+      <button type="button" id="mic-btn" class="icon-btn" title="דיבור">🎤</button>
+      <input id="chat-input" type="text" enterkeyhint="send" placeholder="שאלו את צאבי על צבי ים..." maxlength="200">
+      <button type="submit" class="send-btn" title="שלח">➤</button>
+    </form>
+  </main>
+
+  <!-- GAMES HUB -->
+  <main id="screen-games" class="screen">
+    <h1 class="screen-title">משחקי הצלה</h1>
+    <p class="screen-lead">חמישה משחקי תלת-ממד · 40 שלבים · כוכבים והתקדמות שנשמרת. כל מכניקה כאן היא דבר שקורה באמת בהצלת צבי ים.</p>
+    <div class="game-grid">
+      <button type="button" class="game-card" onclick="CBY.openGame('hatch')">
+        <span class="gc-emoji">🌊</span>
+        <span class="gc-title">מסע אל הים</span>
+        <span class="gc-desc">הובילו אבקוע לים · 8 שלבים</span>
+        <span class="gc-prog" data-game="hatch"></span>
+      </button>
+      <button type="button" class="game-card" onclick="CBY.openGame('clean')">
+        <span class="gc-emoji">🛍️</span>
+        <span class="gc-title">נקו את הים</span>
+        <span class="gc-desc">פלסטיק כן, מדוזה לא · 8 שלבים</span>
+        <span class="gc-prog" data-game="clean"></span>
+      </button>
+      <button type="button" class="game-card" onclick="CBY.openGame('release')">
+        <span class="gc-emoji">🏥</span>
+        <span class="gc-title">שחרור לים</span>
+        <span class="gc-desc">צב משוקם חוזר הביתה · 8 שלבים</span>
+        <span class="gc-prog" data-game="release"></span>
+      </button>
+      <button type="button" class="game-card" onclick="CBY.openGame('fox')">
+        <span class="gc-emoji">🦊</span>
+        <span class="gc-title">שמרו על הקן</span>
+        <span class="gc-desc">הבריחו טורפים עד השחר · 8 שלבים</span>
+        <span class="gc-prog" data-game="fox"></span>
+      </button>
+      <button type="button" class="game-card" onclick="CBY.openGame('eggs')">
+        <span class="gc-emoji">🥚</span>
+        <span class="gc-title">סריקת חופים</span>
+        <span class="gc-desc">מתנדב מחפש קן לפי עקבות · 8 שלבים</span>
+        <span class="gc-prog" data-game="eggs"></span>
+      </button>
+      <button type="button" class="game-card" onclick="CBY.openGame('quiz')">
+        <span class="gc-emoji">🧠</span>
+        <span class="gc-title">חידון צאבי</span>
+        <span class="gc-desc">40 שאלות · הסבר וקול · רצף</span>
+        <span class="gc-prog">חידון</span>
+      </button>
+    </div>
+  </main>
+
+  <!-- CARE -->
+  <main id="screen-care" class="screen">
+    <h1 class="screen-title">טיפול בצאבי</h1>
+    <div class="care-panel">
+      <div class="care-stage">
+        <canvas id="care-canvas" class="care-canvas" width="640" height="420" aria-label="טיפול בצאבי"></canvas>
+        <div class="care-pet" id="care-pet">🐢</div>
+      </div>
+      <div class="meters">
+        <label>רעב <meter id="m-hunger" min="0" max="100" value="70"></meter></label>
+        <label>אושר <meter id="m-joy" min="0" max="100" value="80"></meter></label>
+        <label>ניקיון <meter id="m-clean" min="0" max="100" value="75"></meter></label>
+        <label>בריאות <meter id="m-health" min="0" max="100" value="90"></meter></label>
+      </div>
+      <p id="care-msg" class="care-msg">צאבי מחייך אליכם מהמים!</p>
+      <div class="care-actions">
+        <button type="button" onclick="CBY.care('feed')">🥬 האכילו</button>
+        <button type="button" onclick="CBY.care('play')">🎾 שחקו</button>
+        <button type="button" onclick="CBY.care('clean')">🧽 נקו</button>
+        <button type="button" onclick="CBY.care('heal')">💊 טפלו</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- LEARN / ACADEMY -->
+  <main id="screen-learn" class="screen">
+    <h1 class="screen-title">בית הספר לים</h1>
+
+    <!-- ⚠️⚠️ **שתי לשוניות, ולא ערבוב.**
+         שיעור לילד ומאמר למדריך הם שני סוגי תוכן שונים לגמרי:
+         אחד קצר עם שאלת בדיקה וכוכב, השני ארוך עם מנגנון ומקורות.
+         ערבוב שלהם ברשימה אחת גורם לכך שהילד גולל על פני דברים
+         שאינם בשבילו, והמדריך מחפש את שלו בין שיעורים. -->
+    <div class="learn-tabs" role="tablist">
+      <button type="button" class="ltab on" id="ltab-lessons" role="tab">📚 שיעורים</button>
+      <button type="button" class="ltab" id="ltab-articles" role="tab">📄 מאמרים</button>
+    </div>
+
+    <div id="learn-lessons">
+      <p class="screen-lead">28 שיעורים: 18 במסלול הבסיסי לילדים, ועוד 10 במסלול מתקדם למדריכים, למתנדבים ולילדים גדולים. בסוף כל שיעור — שאלת בדיקה.</p>
+      <div id="lesson-list" class="lesson-list"></div>
+      <article id="lesson-view" class="lesson-view hidden"></article>
+    </div>
+
+    <div id="learn-articles" class="hidden">
+      <div id="article-list" class="article-list"></div>
+      <article id="article-view" class="article-view hidden"></article>
+    </div>
+
+    <section class="action-card">
+      <h2>🌟 מה אפשר לעשות כבר היום</h2>
+      <ul>
+        <li>לאסוף פסולת בכל ביקור בחוף — במיוחד שקיות, קש ובלונים</li>
+        <li>לסתום בורות בחול ולקפל כיסאות ושמשיות לפני שהולכים</li>
+        <li>לכבות אורות שמאירים לים בלילות הקיץ, ובלי פלאש בחוף</li>
+        <li>לא לנסוע עם רכב על החול ולא להתקרב לקן מגודר</li>
+        <li>לא לגעת בצב, בקן או באבקוע — גם לא "רק לרגע"</li>
+        <li>לדווח על כל צב, קן או עקבות למוקד רשות הטבע והגנים: <b>3639*</b></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- PATROL MAP -->
+  <main id="screen-patrol" class="screen">
+    <h1 class="screen-title">סיור חופים</h1>
+    <p class="screen-lead">בדיוק כמו מתנדבי רשות הטבע והגנים בשעות הבוקר: יורדים לקו המים, מאתרים את העקבות הרחבות שהנקבה השאירה בעלייה מהים, הולכים לפיהן במעלה החוף — ומוצאים את הקן.</p>
+    <div class="patrol-card">
+      <div class="patrol-steps">
+        <div class="ps"><span class="n">1</span><div><b>מתחילים בקו המים</b><span>העקבות תמיד מתחילות שם — משם הנקבה עלתה בלילה.</span></div></div>
+        <div class="ps"><span class="n">2</span><div><b>הולכים לפי הזוג</b><span>שתי שורות טביעות סנפיר, ובאמצע חריץ הגרירה של הבטן.</span></div></div>
+        <div class="ps"><span class="n">3</span><div><b>מד חם/קר</b><span>הטבעת סביב המתנדב משנה צבע ככל שמתקרבים לקן.</span></div></div>
+        <div class="ps"><span class="n">4</span><div><b>חופרים בזהירות</b><span>וכשמוצאים — מדווחים ל-3639*. לא נוגעים בביצים בלי הדרכה.</span></div></div>
+      </div>
+      <button type="button" class="primary patrol-go" onclick="CBY.startPatrol()">🏖️ יציאה לסריקה</button>
+      <p class="hint">הסריקה נפתחת במסך מלא בתלת-ממד, עם מתנדב שהולך על החול.</p>
+    </div>
+  </main>
+
+  <!-- GAME OVERLAY -->
+  <div id="game-overlay" class="overlay hidden" role="dialog" aria-modal="true">
+    <div class="overlay-card">
+      <button type="button" class="overlay-close" onclick="CBY.closeGame()" aria-label="סגור">✖</button>
+      <h2 id="game-title">משחק</h2>
+      <p id="game-status" class="game-status"></p>
+      <canvas id="game-canvas" width="360" height="420"></canvas>
+      <div id="quiz-box" class="quiz-box hidden"></div>
+      <div class="overlay-actions">
+        <button type="button" class="primary" id="game-again" onclick="CBY.restartGame()">עוד פעם</button>
+        <button type="button" onclick="CBY.closeGame()">חזרה</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="settings-sheet" class="sheet" role="dialog" aria-modal="true">
+    <div class="sheet-card">
+      <h3>⚙️ קול וצליל</h3>
+      <p class="sub">כל ההגדרות נשמרות במכשיר.</p>
+
+      <div class="set-row">
+        <label>🔊 צלילי משחק<span class="hintline">איסוף, פגיעה, ניצחון</span></label>
+        <button type="button" class="toggle-btn" id="set-sfx">פועל</button>
+      </div>
+      <div class="set-row">
+        <label>🗣️ צאבי מדבר<span class="hintline">הקראה בעברית של התשובות</span></label>
+        <button type="button" class="toggle-btn" id="set-voice">פועל</button>
+      </div>
+      <div class="set-row">
+        <label>🎚️ קול צאבי<span class="hintline">הקולות שמותקנים במכשיר</span></label>
+        <select id="set-voice-name"></select>
+      </div>
+      <div class="set-row">
+        <label>⏩ מהירות דיבור</label>
+        <input type="range" id="set-rate" min="0.7" max="1.3" step="0.05">
+      </div>
+      <div class="set-row">
+        <label>🌊 רקע ים<span class="hintline">גלים שקטים ברקע</span></label>
+        <button type="button" class="toggle-btn" id="set-amb">כבוי</button>
+      </div>
+
+      <!-- ⚠️⚠️ **כניסה קבועה להתקנה — ולא רק באנר.**
+           הבאנר העליון מוצג פעם אחת ונסגר לתמיד ברגע שלוחצים ✖,
+           ובאנדרואיד הוא בכלל תלוי באירוע beforeinstallprompt
+           שהדפדפן יורה מתי שמתחשק לו. מי שפספס אותו נשאר בלי שום
+           דרך להתקין — וזה בדיוק מה שקרה בפועל.
+           כאן: שורה קבועה בהגדרות, שתמיד שם. -->
+      <div class="set-row" id="set-install-row">
+        <label>📲 התקנת האפליקציה<span class="hintline">אייקון במסך הבית · מסך מלא · עובד בלי רשת</span></label>
+        <button type="button" class="toggle-btn" id="set-install">התקנה</button>
+      </div>
+
+      <div class="sheet-actions">
+        <button type="button" class="primary" onclick="CBY.testVoice()">🔈 שמיעת דוגמה</button>
+        <button type="button" class="ghost" onclick="CBY.settings(false)">סגירה</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="three.min.js"></script>
+  <script src="chubby3d.js"></script>
+  <!-- מאגר הידע — נטען כסקריפט כדי שיעבוד גם בלי שרת וגם ללא רשת -->
+  <script src="brain.js"></script>
+
+  <!-- מנוע השיחה: מילון ➜ פיצול בקשות ➜ בינה ➜ דירוג ➜ הקשר ➜ מנצח -->
+  <script src="lexicon.js"></script>
+  <script src="smart.js"></script>
+  <script src="mind.js"></script>
+  <script src="match.js"></script>
+  <script src="talk.js"></script>
+  <script src="kb.js"></script>
+  <script src="sound.js"></script>
+  <script src="voice.js"></script>
+  <script src="games.js"></script>
+  <script src="games3d.js"></script>
+  <script src="care.js"></script>
+  <script src="academy-deep.js"></script>
+  <script src="academy.js"></script>
+  <script src="articles.js"></script>
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('./sw.js').catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+# צאבי הצב — כותרות לשרת (Netlify / Cloudflare Pages)
+# © דניאל אברהם חדאד | CBY-T7R4L2E9
+#
+# ⚠️⚠️ **למה הקובץ הזה קיים בכלל.**
+#
+# Service Worker הוא מה שהופך אתר לאפליקציה שעובדת בלי אינטרנט.
+# רוב השרתים מגישים אותו עם מטמון ארוך, וזו מלכודת מפורסמת:
+# הדפדפן שומר עותק של sw.js למשך שעות, ולכן עדכון של האפליקציה
+# לא מגיע למשתמש — הוא ממשיך לראות גרסה ישנה בלי לדעת.
+#
+# הפתרון: sw.js לעולם לא נשמר במטמון. כל שאר הקבצים כן, ובאגרסיביות,
+# כי ה-Service Worker ממילא מנהל אותם בעצמו.
+
+/sw.js
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/manifest.json
+  Cache-Control: no-cache
+
+/index.html
+  Cache-Control: no-cache
+
+/*.js
+  Cache-Control: public, max-age=604800
+
+/*.png
+  Cache-Control: public, max-age=2592000
+
+/*.css
+  Cache-Control: public, max-age=604800

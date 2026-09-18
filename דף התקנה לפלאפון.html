@@ -1,0 +1,253 @@
+<!--
+  © כל הזכויות שמורות | ALL RIGHTS RESERVED
+  צאבי הצב — שומר צבי הים
+  יוצר ובעלים בלעדי: דניאל אברהם חדאד | Daniel Avraham Haddad
+  🔒 [CBY-PROOF] CBY-T7R4L2E9 · DAH-CBY-2026
+-->
+<!-- צאבי הצב — דף הכניסה | © דניאל אברהם חדאד / Daniel Avraham Haddad | CBY-T7R4L2E9 -->
+<title>צאבי הצב — כניסה והתקנה</title>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800;900&family=Secular+One&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sand:#f5e9d2; --sand-2:#ede0c4; --ink:#0d3040; --ink-2:#3d5a68;
+    --sea:#12758f; --sea-2:#1a93b0; --foam:#7fe3c4; --sun:#f0a830;
+    --card:#ffffff; --line:rgba(13,48,64,.12); --shadow:0 10px 30px rgba(13,48,64,.10);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --sand:#071d28; --sand-2:#0b2634; --ink:#eaf6fb; --ink-2:#9dbccb;
+      --sea:#6fd8e8; --sea-2:#8ee8f2; --card:#0f3243;
+      --line:rgba(234,246,251,.14); --shadow:0 10px 30px rgba(0,0,0,.4);
+    }
+  }
+  :root[data-theme="dark"] {
+    --sand:#071d28; --sand-2:#0b2634; --ink:#eaf6fb; --ink-2:#9dbccb;
+    --sea:#6fd8e8; --sea-2:#8ee8f2; --card:#0f3243;
+    --line:rgba(234,246,251,.14); --shadow:0 10px 30px rgba(0,0,0,.4);
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; background:var(--sand); color:var(--ink);
+    font-family:Rubik,"Segoe UI",system-ui,-apple-system,sans-serif;
+    direction:rtl; line-height:1.65; padding:0 16px 48px;
+  }
+  .wrap { max-width:680px; margin-inline:auto; }
+
+  .hero {
+    position:relative; margin-inline:-16px; padding:34px 20px 30px; overflow:hidden;
+    background:radial-gradient(120% 90% at 50% -20%, var(--sea-2) 0%, var(--sea) 55%, transparent 100%),
+               linear-gradient(180deg, var(--sea) 0%, var(--sand) 100%);
+    text-align:center;
+  }
+  .hero::after { content:""; position:absolute; inset-inline:-10%; bottom:-14px; height:40px;
+    background:var(--sand); border-radius:50% 50% 0 0 / 100% 100% 0 0; }
+  .hero img { width:104px; height:104px; border-radius:26px; display:block; margin-inline:auto;
+    box-shadow:0 10px 26px rgba(0,0,0,.28); }
+  .hero h1 { font-family:"Secular One",Rubik,sans-serif; font-size:clamp(1.6rem,6.5vw,2.1rem);
+    margin:14px 0 4px; color:#fff; text-shadow:0 2px 12px rgba(0,0,0,.22); }
+  .hero p { margin:0; color:rgba(255,255,255,.93); font-size:clamp(.88rem,3.6vw,1rem); }
+
+  .cta {
+    display:block; margin:24px auto 12px; max-width:440px; padding:19px 22px;
+    border-radius:20px; background:var(--sea); color:#fff; text-decoration:none;
+    text-align:center; font-weight:900; font-size:clamp(1.05rem,4.4vw,1.2rem);
+    box-shadow:var(--shadow);
+  }
+  .cta:active { transform:scale(.985); }
+  .cta small { display:block; font-weight:500; opacity:.9; font-size:.8rem; margin-top:4px; }
+  .addr { text-align:center; font-size:.9rem; color:var(--ink-2); margin:0 0 4px; word-break:break-all; }
+  .addr code { background:var(--sand-2); padding:3px 8px; border-radius:8px; font-size:.88rem; }
+
+  .qr-card { max-width:420px; margin:22px auto 8px; background:var(--card);
+    border:1px solid var(--line); border-radius:22px; padding:20px; text-align:center;
+    box-shadow:var(--shadow); }
+  .qr-card h2 { margin:0 0 4px; font-size:clamp(1.02rem,4.2vw,1.18rem); }
+  .qr-card p { margin:0 0 14px; color:var(--ink-2); font-size:.85rem; }
+  .qr-card img { display:block; margin-inline:auto; background:#fff; padding:10px;
+    border-radius:14px; max-width:100%; height:auto; }
+
+  h2.sect { font-family:"Secular One",Rubik,sans-serif;
+    font-size:clamp(1.15rem,4.8vw,1.42rem); margin:34px 0 10px;
+    display:flex; align-items:center; gap:10px; }
+  .badge { flex:0 0 auto; width:32px; height:32px; border-radius:50%;
+    background:var(--foam); color:#06283a; display:grid; place-items:center;
+    font-weight:900; font-size:.95rem; }
+  .lead { margin:-4px 0 14px; color:var(--ink-2); font-size:clamp(.84rem,3.4vw,.93rem); }
+
+  .warn {
+    background:linear-gradient(135deg, rgba(240,168,48,.18), rgba(240,120,60,.12));
+    border:1px solid rgba(240,168,48,.45); border-radius:18px; padding:16px 18px;
+    margin:22px 0; font-size:clamp(.86rem,3.5vw,.95rem);
+  }
+  .warn b { color:#b9741a; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .warn b { color:#ffc663; } }
+
+  .tabs { display:flex; gap:8px; margin-bottom:14px; }
+  .tab { flex:1; border:1px solid var(--line); background:var(--card); color:var(--ink);
+    border-radius:14px; padding:12px 10px; font:inherit; font-weight:800; font-size:.92rem;
+    cursor:pointer; min-height:48px; }
+  .tab[aria-selected="true"] { background:var(--ink); color:var(--sand); border-color:var(--ink); }
+
+  ol.steps { list-style:none; margin:0; padding:0; counter-reset:s; }
+  ol.steps li { counter-increment:s; display:flex; gap:13px; align-items:flex-start;
+    background:var(--card); border:1px solid var(--line); border-radius:16px;
+    padding:14px 15px; margin-bottom:9px; }
+  ol.steps li::before { content:counter(s); flex:0 0 auto; width:30px; height:30px;
+    border-radius:50%; background:var(--foam); color:#06283a; display:grid;
+    place-items:center; font-weight:900; font-size:.92rem; }
+  ol.steps b { display:block; font-size:clamp(.9rem,3.7vw,1rem); }
+  ol.steps span { display:block; color:var(--ink-2);
+    font-size:clamp(.79rem,3.2vw,.88rem); margin-top:2px; }
+  code { background:var(--sand-2); padding:2px 6px; border-radius:6px; font-size:.9em; }
+
+  .feat { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; }
+  .f { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:14px; }
+  .f .e { font-size:1.5rem; line-height:1; }
+  .f b { display:block; margin:7px 0 3px; font-size:.95rem; }
+  .f span { color:var(--ink-2); font-size:.8rem; line-height:1.5; }
+
+  .note { margin-top:26px;
+    background:linear-gradient(135deg, rgba(240,168,48,.14), rgba(127,227,196,.12));
+    border:1px solid var(--line); border-radius:18px; padding:16px 17px;
+    font-size:clamp(.82rem,3.4vw,.92rem); }
+  .note b { color:var(--sea); }
+
+  footer { margin-top:30px; padding-top:16px; border-top:1px solid var(--line);
+    color:var(--ink-2); font-size:.76rem; text-align:center; }
+  .hidden { display:none; }
+</style>
+
+<!-- © דניאל אברהם חדאד · CBY-T7R4L2E9 -->
+<div class="hero">
+  <img src="icon-512.png" alt="צאבי הצב">
+<!-- © דניאל אברהם חדאד · CBY-T7R4L2E9 -->
+  <h1>צאבי הצב</h1>
+  <p>שומר צבי הים · אפליקציה בעברית לילדים</p>
+</div>
+
+<!-- © דניאל אברהם חדאד · CBY-T7R4L2E9 -->
+<div class="wrap">
+
+  <a class="cta" href="https://gilded-marzipan-5daf4b.netlify.app/">
+    🐢 פתחו את צאבי
+    <small>האפליקציה המלאה — צ׳אט, 40 שלבי משחק, שיעורים ומאמרים</small>
+  </a>
+  <p class="addr"><code>gilded-marzipan-5daf4b.netlify.app</code></p>
+
+  <div class="qr-card">
+<!-- © דניאל אברהם חדאד · CBY-T7R4L2E9 -->
+    <h2>📷 סריקה מהטלפון</h2>
+    <p>פתחו מצלמה בטלפון וכוונו לקוד — צאבי ייפתח מיד.</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAa4AAAGuAQMAAADyO3DZAAAABlBMVEUNMED///8jcmy4AAACaElEQVR42u1cy23FMAwT6gEyUlb3SB7gAWpi6+e0PfQBPRRkDsFLXF0CQiJpuqLvXC9hGctYxjKWsez3ZS+x61CVU+dtvmuq/bh+nUNEu//VXfEhb10s+59lUhA2ETHf9QWQCy8yUbJWC674JRFR0ic2Dmsj9i4Ako83aIgSeJTMyxauOXMNm2aPRAlRkigZsTAkWIszFKKEvOR4GSUJ5CxGO7FBXoKOEtc4Rj++v1HjQKPki552NtJ+0thECShKkn4Ye7VhEwxljaLRiBJUlJiXNlzKnElcg9FOp+1kLwHmJWcaJPewWabJUjs2e8yPPYgS3IlTDLVhPNaaR5jzN3xC6PBLomocg0rCIhZ204QoweYlqYmds64R033isJcg95KFAxM1KYJjFLnGIS/BZq9jd06cnGzvmoYzyy+Jyl6NdIyaKomNG9maDFGCyUum/g3puwIluccXNIV+CTIvKTvBWndvXA43jxSQl5CXmG+W4TQDyEi/hEoYW+NsOzWudsy19zZCJYzNXm2Tphiwj5y01l/8kogTp0ZLIjngqZL018he4SfOFpWv/cUJLl01apwIv1prSXVcWEsXZtWQNU4rMRIDTcjhOpnYS4DZazyu2RO8RP2khb8jSrBR8gin+UKr/j33cdA1TgZdCyV5OLN01ZB7SY1IS2Rcn9kj7uOA95J5RVSgyyZv6jlhogRYCefZvmMLEuRNmVVDR8lulWRoYDssLOwlREl2kK3JZDKJDj1RsqOk7cmkWKUSJi+pB/zq2eGRDj1RAq9xtORL/KyW1I2+LtzHgfdL+A8JWcYylrGMZX9V9gl5qBypTysqNQAAAABJRU5ErkJggg==" alt="קוד QR לפתיחת צאבי" width="260" height="260">
+  </div>
+
+  <!-- ⚠️⚠️ הדבר היחיד שחוסם כרגע. Netlify Drop מפרסם אתר חדש
+       במצב Private כברירת מחדל: הכתובת עובדת רק למי שמחובר לחשבון
+       שהעלה אותו. הרכזת, הילדים וההורים יקבלו מסך התחברות במקום
+       את צאבי — וזה נראה כאילו הקישור שבור. -->
+<!-- © דניאל אברהם חדאד · CBY-T7R4L2E9 -->
+  <div class="warn">
+    ⚠️ <b>שלב חובה לפני ששולחים לאחרים</b><br>
+    האתר פורסם כרגע במצב <b>Private</b>. במצב הזה הכתובת עובדת רק במכשיר
+    שמחובר לחשבון שהעלה אותה — כל אחד אחר יקבל מסך התחברות ויחשוב שהקישור שבור.<br><br>
+    בעמוד האתר ב-Netlify לוחצים על הכפתור <b>«Make public»</b> (התכלת, משמאל).
+    מהרגע הזה הקישור עובד לכולם, בלי הרשמה ובלי סיסמה.
+  </div>
+
+<!-- © דניאל אברהם חדאד · CBY-T7R4L2E9 -->
+  <h2 class="sect"><span class="badge">1</span> התקנה בטלפון</h2>
+  <p class="lead">אחרי ההתקנה צאבי מקבל אייקון משלו במסך הבית, נפתח במסך מלא <b>ועובד גם בלי אינטרנט</b>.</p>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" id="t-ios" aria-selected="false">🍎 אייפון</button>
+    <button class="tab" role="tab" id="t-and" aria-selected="false">🤖 אנדרואיד</button>
+  </div>
+
+<!-- © דניאל אברהם חדאד · CBY-T7R4L2E9 -->
+  <ol class="steps" id="s-ios">
+    <li><div><b>חייבים לפתוח בספארי</b><span>בכרום באייפון אין אפשרות התקנה כלל — זו מגבלה של iOS עצמו.</span></div></li>
+    <li><div><b>כפתור השיתוף ⬆️ בתחתית המסך</b><span>הריבוע עם החץ כלפי מעלה.</span></div></li>
+    <li><div><b>גוללים ובוחרים «הוסף למסך הבית» ➕</b><span>אם לא רואים — גוללים את הרשימה עד הסוף.</span></div></li>
+    <li><div><b>«הוסף»</b><span>האייקון של צאבי יופיע במסך הבית, והאפליקציה תיפתח במסך מלא.</span></div></li>
+  </ol>
+
+<!-- © דניאל אברהם חדאד · CBY-T7R4L2E9 -->
+  <ol class="steps hidden" id="s-and">
+    <li><div><b>פותחים את הכתובת בכרום</b><span>או בכל דפדפן מבוסס כרום.</span></div></li>
+    <li><div><b>מחכים לבאנר «התקינו את צאבי»</b><span>מופיע בראש האפליקציה אחרי כמה שניות.</span></div></li>
+    <li><div><b>או: תפריט ⋮ ➜ «התקן אפליקציה»</b><span>שלוש הנקודות בפינה העליונה של הדפדפן.</span></div></li>
+    <li><div><b>מאשרים</b><span>האייקון יתווסף למסך הבית ולמגירת האפליקציות.</span></div></li>
+  </ol>
+
+<!-- © דניאל אברהם חדאד · CBY-T7R4L2E9 -->
+  <h2 class="sect"><span class="badge">2</span> העלאת עדכון לאותה כתובת</h2>
+  <p class="lead">האתר כבר קיים, ולכן <b>לא</b> גוררים שוב ל-Netlify Drop (זה יוצר אתר חדש עם כתובת אחרת).</p>
+  <ol class="steps">
+    <li><div><b>משנים את מספר הגרסה</b>
+      <span>בקובץ <code>sw.js</code>, השורה <code>var CACHE = 'chubby-vNN'</code>.
+      בלי זה הדפדפן ימשיך להגיש למשתמשים את הגרסה השמורה.</span></div></li>
+    <li><div><b>נכנסים לעמוד האתר ב-Netlify ➜ לשונית <code>Deploys</code></b>
+      <span>זהו העמוד שבצילום המסך — אותו אחד שבו נמצא כפתור Make public.</span></div></li>
+    <li><div><b>גוררים את <code>chubby-site.zip</code> החדש לאזור הגרירה</b>
+      <span>תוך כדקה הכתובת מגישה את הגרסה החדשה. הכתובת לא משתנה.</span></div></li>
+    <li><div><b>המשתמשים מקבלים את העדכון בפתיחה הבאה</b>
+      <span>בלי להתקין מחדש ובלי לעשות כלום.</span></div></li>
+  </ol>
+
+<!-- © דניאל אברהם חדאד · CBY-T7R4L2E9 -->
+  <h2 class="sect"><span class="badge">3</span> כתובת יפה יותר (לא חובה)</h2>
+  <p class="lead">בעמוד האתר: <code>Project configuration ➜ Change site name</code>, ואפשר לקבל למשל
+  <code>chubby-turtle.netlify.app</code>. שימו לב שהכתובת הישנה תפסיק לעבוד — לכן כדאי לעשות זאת
+  <b>לפני</b> ששולחים את הקישור לרכזת ולילדים.</p>
+
+<!-- © דניאל אברהם חדאד · CBY-T7R4L2E9 -->
+  <h2 class="sect">מה יש בפנים</h2>
+<!-- © דניאל אברהם חדאד · CBY-T7R4L2E9 -->
+  <div class="feat">
+    <div class="f"><span class="e">💬</span><b>צ׳אט עם צאבי</b><span>465 נושאים על צבי ים. מדבר בקול ומקשיב למיקרופון.</span></div>
+<!-- © דניאל אברהם חדאד · CBY-T7R4L2E9 -->
+    <div class="f"><span class="e">🎮</span><b>5 משחקי תלת־ממד</b><span>40 שלבים עם כוכבים והתקדמות שנשמרת.</span></div>
+<!-- © דניאל אברהם חדאד · CBY-T7R4L2E9 -->
+    <div class="f"><span class="e">📚</span><b>28 שיעורים</b><span>18 לילדים ועוד 10 במסלול מתקדם למדריכים.</span></div>
+<!-- © דניאל אברהם חדאד · CBY-T7R4L2E9 -->
+    <div class="f"><span class="e">📄</span><b>7 מאמרי עומק</b><span>כולל מדריך מעשי לארגון סריקת חופים.</span></div>
+    <div class="f"><span class="e">🧠</span><b>חידון בשני מסלולים</b><span>ילדים ומבוגרים · 55 שאלות · הסבר לפני כל מונח.</span></div>
+<!-- © דניאל אברהם חדאד · CBY-T7R4L2E9 -->
+    <div class="f"><span class="e">📴</span><b>עובד בלי רשת</b><span>אחרי הפתיחה הראשונה הכול שמור במכשיר.</span></div>
+  </div>
+
+<!-- © דניאל אברהם חדאד · CBY-T7R4L2E9 -->
+  <div class="note">
+    <b>לרכזת המתנדבים:</b> אחרי לחיצה על «Make public» שולחים קישור אחד והיא מעבירה אותו לילדים.
+    אין הרשמה, אין חנות אפליקציות ואין הרשאות. אחרי הפתיחה הראשונה האפליקציה עובדת גם בלי
+    אינטרנט — מתאים לסיור בחוף. לשונית <b>המאמרים</b> נכתבה במיוחד למדריכים, וכוללת מדריך
+    מעשי לארגון סריקת בוקר. מספר הדיווח על צב, קן או עקבות: <b>3639*</b>.
+  </div>
+
+  <footer>
+    © כל הזכויות שמורות · דניאל אברהם חדאד / Daniel Avraham Haddad<br>
+    טביעת אצבע: CBY-T7R4L2E9
+  </footer>
+</div>
+
+<script>
+  (function () {
+    'use strict';
+    var iOS = /iphone|ipad|ipod/i.test(navigator.userAgent) ||
+      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    var tIos = document.getElementById('t-ios');
+    var tAnd = document.getElementById('t-and');
+    var sIos = document.getElementById('s-ios');
+    var sAnd = document.getElementById('s-and');
+    function show(which) {
+      var ios = which === 'ios';
+      tIos.setAttribute('aria-selected', ios ? 'true' : 'false');
+      tAnd.setAttribute('aria-selected', ios ? 'false' : 'true');
+      sIos.classList.toggle('hidden', !ios);
+      sAnd.classList.toggle('hidden', ios);
+    }
+    tIos.onclick = function () { show('ios'); };
+    tAnd.onclick = function () { show('and'); };
+    show(iOS ? 'ios' : 'and');
+  })();
+</script>

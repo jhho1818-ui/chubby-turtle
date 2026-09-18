@@ -1,0 +1,61 @@
+# ==================================================================
+# 🚀 הגדרות הפרסום של צאבי ב-Netlify  [CBY-DEPLOY]
+# 🔒 דניאל אברהם חדאד / Daniel Avraham Haddad · CBY-T7R4L2E9
+# ==================================================================
+# מרגע שהמאגר מחובר, כל דחיפה ל-GitHub מפרסמת את האתר לבד —
+# לאותה כתובת, בלי לגרור שום דבר לשום מקום.
+#
+# ⚠️ publish = "dist" ולא "." — וזה קריטי ולא סגנוני. פרסום של
+# שורש המאגר היה מעלה לאינטרנט גם את tools, את קובצי ה-bat, את
+# המדריכים ואת ה-ZIP. הבנייה מעתיקה ל-dist רק את מה שהאפליקציה
+# באמת טוענת, לפי הרשימה שנגזרת מ-sw.js.
+# ==================================================================
+
+[build]
+  command = "node tools/build-dist.js"
+  publish = "dist"
+
+[build.environment]
+  # ⚠️ נעילת גרסה בכוונה. ברירת המחדל של Netlify משתנה מדי פעם,
+  # ובנייה שעבדה חודשים נשברת יום אחד בלי ששינינו שורה.
+  NODE_VERSION = "20"
+
+# ------------------------------------------------------------------
+# ⚠️⚠️ sw.js לעולם לא נשמר במטמון של הרשת.
+# זו תיבת ההילוכים של כל מנגנון העדכון: הדפדפן מגלה שיש גרסה חדשה
+# **רק** דרך הקובץ הזה. אם CDN מגיש עותק ישן שלו, האפליקציה לא
+# תדע שיצא עדכון — ואז לא משנה כמה נכון בנינו את החותמת.
+# ------------------------------------------------------------------
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/manifest.json"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# הקבצים שה-service worker מנהל ממילא — אפשר לשמור אותם לאורך זמן,
+# כי החלפתם נעשית דרך שינוי שם המטמון ולא דרך פקיעת תוקף.
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+    X-Author = "Daniel Avraham Haddad"
+    X-Copyright = "(c) Daniel Avraham Haddad - ALL RIGHTS RESERVED - CBY-T7R4L2E9"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"

@@ -1,0 +1,5 @@
+# צאבי הצב — שומר צבי הים
+# © דניאל אברהם חדאד / Daniel Avraham Haddad — ALL RIGHTS RESERVED
+# 🔒 [CBY-PROOF] CBY-T7R4L2E9 · DAH-CBY-2026
+User-agent: *
+Allow: /
